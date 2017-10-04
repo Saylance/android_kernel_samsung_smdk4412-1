@@ -823,6 +823,8 @@ static int m5mo_flash_power(int enable)
 		if (regulator_is_enabled(movie))
 			regulator_disable(movie);
 	}
+
+torch_exit:
 	regulator_put(flash);
 	regulator_put(movie);
 
