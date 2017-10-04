@@ -46,6 +46,7 @@ extern void __chk_io_ptr(const volatile void __iomem *);
 
 #ifdef __GNUC__
 #include <linux/compiler-gcc.h>
+#include <linux/bug.h>
 #endif
 
 #define notrace __attribute__((no_instrument_function))
