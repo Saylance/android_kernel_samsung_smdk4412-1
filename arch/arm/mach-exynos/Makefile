@@ -228,9 +228,7 @@ else
 obj-$(CONFIG_MIDAS_COMMON)		+= sec-common.o \
 					   midas-tsp.o board-midas-wlan.o \
 					   midas-camera.o midas-thermistor.o \
-					   midas-mhl.o
-
-obj-$(CONFIG_FB_S5P_MIPI_DSIM)		+= board-lcd-mipi.o
+					   midas-mhl.o board-lcd-mipi.o
 endif
 endif
 endif
