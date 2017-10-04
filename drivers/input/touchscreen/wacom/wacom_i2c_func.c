@@ -841,14 +841,13 @@ int wacom_i2c_coord(struct wacom_i2c *wac_i2c)
 	static s16 x, y, pressure;
 	static s16 tmp;
 	int rdy = 0;
+	int aveStrength = 2;
 
 #if defined(WACOM_USE_HEIGHT)
 	u8 gain = 0;
 	u8 height = 0;
 #endif
-#ifdef WACOM_USE_AVE_TRANSITION
-	int aveStrength = 2;
-#endif
+
 #ifdef WACOM_USE_SOFTKEY
 	static s16 softkey, pressed, keycode;
 #endif
